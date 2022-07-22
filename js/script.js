@@ -56,3 +56,16 @@ const DATA_STORE = [{
         keteranngan: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore dolor obcaecati possimus dolores minus. Consectetur.'
     },
 ]
+
+// !animasi hamburger-menu dan navigasi
+const menus = document.querySelectorAll(".menu");
+const navMenu = document.querySelector('.nav-menu');
+
+menus.forEach(function (menu) {
+    const hambergerMenu = menu.querySelector(".hamberger-menu");
+    menu.addEventListener("click", function () {
+        hambergerMenu.classList.toggle("open");
+        navMenu.classList.toggle('show');
+    });
+});
+
