@@ -56,18 +56,3 @@ const DATA_STORE = [{
         keteranngan: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore dolor obcaecati possimus dolores minus. Consectetur.'
     },
 ]
-
-// !membuat fungsi untuk menampilkan produk
-const row_product = document.querySelector('.row-product');
-
-function tampilkanProduk(produk) {
-    return produk.map(item => {
-        return `<div class="col-4">
-            <img src="assets/${item['url']}" class="image-product">
-            <h3>${item['nama']}</h3>
-            <span>Rp. ${item['harga']}</span>
-        </div>`
-    }).join('')
-}
-
-row_product.innerHTML = tampilkanProduk(DATA_STORE)
