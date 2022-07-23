@@ -69,27 +69,6 @@ menus.forEach(function (menu) {
     });
 });
 
-// !menampilkan produk-produk
-function cetakProduk(item) {
-    return item.map(el => {
-        return `<div class="col-8">
-        <div class="image-product" style="background-image: url(../assets/${el.url});"></div>
-        <div class="text-product">
-            <h3>${el.nama}</h3>
-            <p>${el.harga}</p>
-            <div class="button-product">
-            <a href="" class="order button">Order</a>
-            <a href="#detail" class="detail-button button" onlick="showDetail()">Detail</a>
-            </div>
-        </div>
-    </div>`
-    }).join('')
-}
-
-const listProduk = document.querySelector('.row-product');
-listProduk.innerHTML = cetakProduk(DATA_STORE);
-
-
 // !animasi menu kategori
 const circleMenus = document.querySelectorAll('.circle');
 const dropMenu = document.querySelector('.drop-down-menu');
@@ -101,6 +80,17 @@ for (let i = 0; i < circleMenus.length; i++) {
 }
 
 // !menampilkan produk sesuai kategori yang diklik user
+const listProduk = document.querySelector('.row-product');
+const detail = document.createElement('div');
+const detailButton = document.createElement('a');
+const textDetailButton = document.createTextNode('Detail');
+
+detail.appendChild(detailButton)
+detailButton.setAttribute('href', '#detail');
+detailButton.setAttribute('class', 'detail-button button');
+detailButton.textContent = 'Detail';
+console.log(detailButton)
+
 dropMenu.addEventListener('click', events => {
     if (events.target.classList.contains('category-1')) return category(DATA_STORE[0], DATA_STORE[1]);
     if (events.target.classList.contains('category-2')) return category(DATA_STORE[2], DATA_STORE[3]);
@@ -123,12 +113,18 @@ function category(...item) {
             <p>${el.harga}</p>
             <div class="button-product">
             <a href="" class="order button">Order</a>
-            <a href="#detail" class="detail-button button" onlick="showDetail()">Detail</a>
             </div>
         </div>
     </div>`
     }).join('')
 }
+
+const buttonProduct = document.querySelectorAll('.order');
+console.log(buttonProduct)
+for( let i = 0; i < buttonProduct.length; i++) {
+}
+
+listProduk.innerHTML = detail;
 
 // !menampilkan detail produk sesuai yang diklik user
 function cetakDetailProduk(el) {
@@ -158,12 +154,6 @@ function cetakBahan(bahan) {
 const rowDetail = document.querySelector('.row-detail');
 
 function showDetail() {
-    const detailButton = document.querySelectorAll('.detail-button');
-    for (let i = 0; i < DATA_STORE.length; i++) {
-        detailButton[i].addEventListener('click', () => {
-            console.log(i)
-            return rowDetail.innerHTML = cetakDetailProduk(DATA_STORE[i]);
-        })
-    }
+    console.log('hello world')
 }
 

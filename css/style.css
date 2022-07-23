@@ -404,6 +404,38 @@ html {
     background-repeat: no-repeat;
 }
 
+.col-8 .image-1 {
+    background-image: url(../assets/food1.png);
+}
+
+.col-8 .image-2 {
+    background-image: url(../assets/food2.jpg);
+}
+
+.col-8 .image-3 {
+    background-image: url(../assets/food3.jpg);
+}
+
+.col-8 .image-4 {
+    background-image: url(../assets/food4.jpg);
+}
+
+.col-8 .image-5 {
+    background-image: url(../assets/food5.jpg);
+}
+
+.col-8 .image-6 {
+    background-image: url(../assets/food6.jpg);
+}
+
+.col-8 .image-7 {
+    background-image: url(../assets/food7.jpg);
+}
+
+.col-8 .image-8 {
+    background-image: url(../assets/food8.jpg);
+}
+
 .col-8 .text-product {
     width: 100%;
     height: 50%;
