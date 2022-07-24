@@ -253,20 +253,14 @@ html {
     font-size: 25px;
     font-weight: 700;
     margin-bottom: 5px;
-    color: transparent;
-    background: linear-gradient(90deg, #ffffff, #080808);
-    background-clip: text;
-    -webkit-background-clip: text;
+    color: var(--primary-text-color-light);
 }
 
 .banner-text p {
     font-size: 14px;
     font-weight: 500;
     margin-bottom: 30px;
-    color: transparent;
-    background: linear-gradient(90deg, #ffffff, #080808);
-    background-clip: text;
-    -webkit-background-clip: text;
+    color: var(--primary-text-color-light);
 }
 
 .banner-text a {
@@ -289,12 +283,10 @@ html {
     .banner-text h1 {
         font-size: 30px;
         margin-bottom: 8px;
-        color: var(--primary-text-color-light);
     }
 
     .banner-text p {
         margin-bottom: 35px;
-        color: var(--primary-text-color-light);
     }
 
     .banner-text a {
