@@ -235,7 +235,7 @@ html {
 /* !banner */
 .banner {
     height: 100vh;
-    background-image: url(../assets/banner.jpg);
+    background-image: url(../assets/banner-mobile.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -279,7 +279,9 @@ html {
 
 /* !banner responsive break-points */
 @media screen and (min-width: 500px) {
-
+    .banner {
+        background-image: url(../assets/banner-mobile.jpg);
+    }
     .banner-text h1 {
         font-size: 30px;
         margin-bottom: 8px;
