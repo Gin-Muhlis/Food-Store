@@ -252,15 +252,21 @@ html {
 .banner-text h1 {
     font-size: 25px;
     font-weight: 700;
-    color: var(--primary-text-color-light);
     margin-bottom: 5px;
+    color: transparent;
+    background: linear-gradient(90deg, #ffffff, #080808);
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
 .banner-text p {
     font-size: 14px;
     font-weight: 500;
-    color: var(--second-text-color-light);
     margin-bottom: 30px;
+    color: transparent;
+    background: linear-gradient(90deg, #ffffff, #080808);
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
 .banner-text a {
@@ -283,10 +289,12 @@ html {
     .banner-text h1 {
         font-size: 30px;
         margin-bottom: 8px;
+        color: var(--primary-text-color-light);
     }
 
     .banner-text p {
         margin-bottom: 35px;
+        color: var(--primary-text-color-light);
     }
 
     .banner-text a {
@@ -377,7 +385,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 7px rgba(0, 0, 0, .25);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     margin-bottom: 50px;
 }
 
@@ -424,7 +432,7 @@ html {
 /* !product */
 .product {
     padding: 50px 0;
-    background: var(--second-text-color-light);
+    background: rgba(255, 0, 0, .1);
 }
 
 .product .top-product {
@@ -759,7 +767,7 @@ html {
 /* !detail */
 .detail {
     box-sizing: border-box;
-    padding: 0 16px 50px;
+    padding: 50px 16px;
 }
 
 .detail .text-detail {
@@ -895,7 +903,7 @@ html {
 }
 
 footer img {
-    width: 100px;
+    width: 110px;
 }
 
 footer hr {
@@ -908,7 +916,7 @@ footer hr {
 }
 
 .row-footer .col-2 {
-    font-size: 12px;
+    font-size: 13px;
     color: var(--primary-text-color-dark);
     opacity: .7;
     font-weight: 500;

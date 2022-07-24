@@ -60,9 +60,9 @@ const DATA_STORE = [{
 // !animasi hamburger-menu dan navigasi
 const menus = document.querySelectorAll(".menu");
 const navMenu = document.querySelector('.nav-menu');
+const hambergerMenu = document.querySelector(".hamberger-menu");
 
 menus.forEach(function (menu) {
-    const hambergerMenu = menu.querySelector(".hamberger-menu");
     menu.addEventListener("click", function () {
         hambergerMenu.classList.toggle("open");
         navMenu.classList.toggle('show');
@@ -76,7 +76,7 @@ function cetakProduk(item) {
     <div class="image-product" style="background-image: url(../assets/${el.url});"></div>
     <div class="text-product">
         <h3>${el.nama}</h3>
-        <p>${el.harga}</p>
+        <p>Rp. ${el.harga}</p>
         <div class="button-product">
         <a href="" class="order button">Order</a>
         <a href="#detail" class="detail-button button" onlick="showDetail()">Detail</a>
@@ -221,3 +221,12 @@ function showDetail() {
 }
 
 showDetail();
+
+// !menghilangkan navbar menu ketika salah satu menu di klik
+const listMenu = document.querySelectorAll('.row-list a');
+listMenu.forEach(item => {
+  item.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+    hambergerMenu.classList.toggle("open");
+  })  
+})
