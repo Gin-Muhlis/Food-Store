@@ -7,6 +7,25 @@
     --second-text-color-dark: #080818;
 }
 
+::-webkit-scrollbar {
+    background-color: var(--primary-text-color-light);
+    width: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-text-color-dark);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
 html {
     scroll-behavior: smooth;
 }
