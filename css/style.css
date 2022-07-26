@@ -810,7 +810,7 @@ html {
 
 .detail .col-8 .more-detail .ingredients ul li {
     margin-bottom: 10px;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 400;
     color: var(--second-text-color-dark);
 }

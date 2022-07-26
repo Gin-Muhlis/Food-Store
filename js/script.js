@@ -14,7 +14,7 @@ const DATA_STORE = [
         bahan: ['- Nasi', '- Nori', '- Mayo', '- Boncabe'],
         url: 'food2.jpg',
         wa: 'https://wa.me/+6285950895918',
-        keteranngan: ' Mentai adalah salah satu makanan Khas Jepang yang berbasis bahan nasi. Dengan mayo pedasnya yang melimpah, dan isi kornet / telur sosisnya, membuat rasa mentai satu ini gurih, enak dan sedap di mulut. Tak hanya bisa menjadi makanan selingan, dengan adanya nasi, membuat mentai bisa menjadi makanan utama anda'
+        keteranngan: 'Mentai adalah salah satu makanan Khas Jepang yang berbasis bahan nasi. Dengan mayo pedasnya yang melimpah, dan isi kornet / telur sosisnya, membuat rasa mentai satu ini gurih, enak dan sedap di mulut. Tak hanya bisa menjadi makanan selingan, dengan adanya nasi, membuat mentai bisa menjadi makanan utama anda.'
     },
     {
         nama: 'Basreng Spicy',
@@ -22,7 +22,7 @@ const DATA_STORE = [
         bahan: ['- Baso ikan', '- Cabe kering', '- Bawang Putih', '- Minyak'],
         url: 'food3.webp',
         wa: 'https://wa.me/62895325722289?text=Basreng%20Spicy%0ANama%20%3A%20%0AKelas%20%3A%20%0AJumlah%20pesanan%20%3A%20%0ADiantar%20ke%20%3A%20',
-        keteranngan: 'Basreng goreng dengan rasa yang unik dan khas, dibuat dengan baso ikan terbaik dan di padukan dengan bumbu pedas serta ditambah daun jeruk sehingga mempunyai wangi yang bisa membuat anda ketagihan'
+        keteranngan: 'Basreng goreng dengan rasa yang unik dan khas, dibuat dengan baso ikan terbaik dan di padukan dengan bumbu pedas serta ditambah daun jeruk sehingga mempunyai wangi yang bisa membuat anda ketagihan.'
     },
     {
         nama: 'Donat Enak',
@@ -30,7 +30,7 @@ const DATA_STORE = [
         bahan: ['- Terigu', '- Mentega', '- Ragi',  '- Gula Tepung', '- Telur', '- Air'],
         url: 'food4.jpg',
         wa: 'https://wa.me/6283184522191?text=Donat%20Enak%0ANama%20%3A%20%0AKelas%20%3A%20%0AJumlah%20pesanan%20%3A%20%0ADiantar%20ke%20%3A%20',
-        keteranngan: 'Yang manis bukan hanya crush mu tapi ada donat enak dari rpl 1 yang ga kalah manis juga enak banget cocok dimakan kapan saja'
+        keteranngan: 'Yang manis bukan hanya crush mu tapi ada donat enak dari rpl 1 yang ga kalah manis juga enak banget cocok dimakan kapan saja.'
     },
     {
         nama: 'Sebring TAFIRA',
@@ -38,7 +38,7 @@ const DATA_STORE = [
         bahan: [],
         url: 'food5.jpg',
         wa: 'https://wa.me/6289516807559?text=Sebring%20TAFIRA%0ANama%20%3A%20%0AKelas%20%3A%20%0AJumlah%20pesanan%20%3A%20%0ADiantar%20ke%20%3A%20',
-        keteranngan: 'Cemilan satu ini membuat semua tergila gila, semoga kalian tidak gila karena kehabisan produk kami '
+        keteranngan: 'Cemilan satu ini membuat semua tergila gila, semoga kalian tidak gila karena kehabisan produk kami.'
     },
     {
         nama: 'Onigiri',
@@ -46,7 +46,7 @@ const DATA_STORE = [
         bahan: ['- Nasi', '- Nori', '- Telur', '- Sosis'],
         url: 'food6.jpg',
         wa: 'https://wa.me/+6285950895918',
-        keteranngan: 'Onigiri adalah segenggam nasi yang dibentuk menjadi bentuk yang praktis. Onigiri bisa menjadi "go to main dish" anda. Kepalan nasi berbentuk segitiga yang berisi telur sosis / kornet, yang bisa membuat lidah dan perut anda berbahagia saat memakannya. Dengan adanya nasi, membuat onigiri bisa menjadi makanan utama anda yang praktis'
+        keteranngan: 'Onigiri adalah segenggam nasi yang dibentuk menjadi bentuk yang praktis. Onigiri bisa menjadi "go to main dish" anda. Kepalan nasi berbentuk segitiga yang berisi telur sosis / kornet, yang bisa membuat lidah dan perut anda berbahagia saat memakannya. Dengan adanya nasi, membuat onigiri bisa menjadi makanan utama anda yang praktis.'
     },
     {
         nama: 'Nugget Cobek',
