@@ -354,7 +354,7 @@ html {
     .about p,
     .detail .text-detail {
         font-size: 16px;
-        width: 70%;
+        width: 80%;
         margin: auto;
     }
 }
@@ -808,12 +808,6 @@ html {
     margin-bottom: 12px;
 }
 
-.detail .col-8 .more-detail .ingredients ul {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
 .detail .col-8 .more-detail .ingredients ul li {
     margin-bottom: 10px;
     font-size: 12px;
@@ -909,10 +903,10 @@ footer hr {
     flex-wrap: wrap;
 }
 
-.row-footer .col-2 {
+.row-footer .col-2,
+.row-footer .col-2 a {
     font-size: 13px;
     color: var(--primary-text-color-dark);
-    opacity: .7;
     font-weight: 500;
     margin-bottom: 15px;
 }

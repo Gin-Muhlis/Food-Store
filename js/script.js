@@ -1,60 +1,61 @@
-// !membuat data untuk menampilkan produk 
-const DATA_STORE = [{
-        nama: 'Mie Daging Pedas',
+// !membuat data produk
+const DATA_STORE = [
+    {
+        nama: 'Mie Ayam',
         harga: '10.000',
-        bahan: ['bahan-1', 'bahan-2', 'bahan-3', 'bahan-4', 'bahan-5', 'bahan-6'],
-        url: 'food1.png',
-        keteranngan: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus ullam harum cumque nostrum ut magni, quia vel sed nulla.'
+        bahan: ['- Mie', '- Daging Ayam', '- Sawi', '- Pangsit'],
+        url: 'food1.jpg',
+        wa: 'https://wa.me/6281809448488?text=Mie%20Ayam%0ANama%20%3A%20%0AKelas%20%3A%20%0AJumlah%20pesanan%20%3A%20%0ADiantar%20ke%20%3A%20',
+        keteranngan: 'Mi ayam adalah hidangan khas Indonesia yang terbuat dari mi gandum kuning yang dibumbui dengan daging ayam yang biasanya dipotong dadu.'
     },
     {
-        nama: 'Nasi Goreng',
-        harga: '20.000',
-        bahan: ['bahan-1', 'bahan-2', 'bahan-3', 'bahan-4', 'bahan-5', 'bahan-6'],
+        nama: 'Mentai',
+        harga: '10.000',
+        bahan: ['- Nasi', '- Nori', '- Mayo', '- Boncabe'],
         url: 'food2.jpg',
-        keteranngan: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus ullam harum cumque nostrum ut magni, quia vel sed nulla.'
+        wa: 'https://wa.me/+6285950895918',
+        keteranngan: ' Mentai adalah salah satu makanan Khas Jepang yang berbasis bahan nasi. Dengan mayo pedasnya yang melimpah, dan isi kornet / telur sosisnya, membuat rasa mentai satu ini gurih, enak dan sedap di mulut. Tak hanya bisa menjadi makanan selingan, dengan adanya nasi, membuat mentai bisa menjadi makanan utama anda'
     },
     {
-        nama: 'Sushi',
-        harga: '35.000',
-        bahan: ['bahan-1', 'bahan-2', 'bahan-3', 'bahan-4', 'bahan-5', 'bahan-6'],
-        url: 'food3.jpg',
-        keteranngan: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus ullam harum cumque nostrum ut magni, quia vel sed nulla.'
+        nama: 'Basreng Spicy',
+        harga: '3.000',
+        bahan: ['- Baso ikan', '- Cabe kering', '- Bawang Putih', '- Minyak'],
+        url: 'food3.webp',
+        wa: 'https://wa.me/62895325722289?text=Basreng%20Spicy%0ANama%20%3A%20%0AKelas%20%3A%20%0AJumlah%20pesanan%20%3A%20%0ADiantar%20ke%20%3A%20',
+        keteranngan: 'Basreng goreng dengan rasa yang unik dan khas, dibuat dengan baso ikan terbaik dan di padukan dengan bumbu pedas serta ditambah daun jeruk sehingga mempunyai wangi yang bisa membuat anda ketagihan'
     },
     {
-        nama: 'Sosis Bakar',
-        harga: '10.000',
-        bahan: ['bahan-1', 'bahan-2', 'bahan-3', 'bahan-4', 'bahan-5', 'bahan-6'],
+        nama: 'Donat Enak',
+        harga: '3.000',
+        bahan: ['- Terigu', '- Mentega', '- Ragi',  '- Gula Tepung', '- Telur', '- Air'],
         url: 'food4.jpg',
-        keteranngan: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus ullam harum cumque nostrum ut magni, quia vel sed nulla.'
+        wa: 'https://wa.me/6283184522191?text=Donat%20Enak%0ANama%20%3A%20%0AKelas%20%3A%20%0AJumlah%20pesanan%20%3A%20%0ADiantar%20ke%20%3A%20',
+        keteranngan: 'Yang manis bukan hanya crush mu tapi ada donat enak dari rpl 1 yang ga kalah manis juga enak banget cocok dimakan kapan saja'
     },
     {
-        nama: 'Hamburger',
-        harga: '15.000',
-        bahan: ['bahan-1', 'bahan-2', 'bahan-3', 'bahan-4', 'bahan-5', 'bahan-6'],
+        nama: 'Sebring TAFIRA',
+        harga: '3.000',
+        bahan: [],
         url: 'food5.jpg',
-        keteranngan: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus ullam harum cumque nostrum ut magni, quia vel sed nulla.'
+        wa: 'https://wa.me/6289516807559?text=Sebring%20TAFIRA%0ANama%20%3A%20%0AKelas%20%3A%20%0AJumlah%20pesanan%20%3A%20%0ADiantar%20ke%20%3A%20',
+        keteranngan: 'Cemilan satu ini membuat semua tergila gila, semoga kalian tidak gila karena kehabisan produk kami '
     },
     {
-        nama: 'Pizza',
-        harga: '25.000',
-        bahan: ['bahan-1', 'bahan-2', 'bahan-3', 'bahan-4', 'bahan-5', 'bahan-6'],
+        nama: 'Onigiri',
+        harga: '8.000',
+        bahan: ['- Nasi', '- Nori', '- Telur', '- Sosis'],
         url: 'food6.jpg',
-        keteranngan: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus ullam harum cumque nostrum ut magni, quia vel sed nulla.'
+        wa: 'https://wa.me/+6285950895918',
+        keteranngan: 'Onigiri adalah segenggam nasi yang dibentuk menjadi bentuk yang praktis. Onigiri bisa menjadi "go to main dish" anda. Kepalan nasi berbentuk segitiga yang berisi telur sosis / kornet, yang bisa membuat lidah dan perut anda berbahagia saat memakannya. Dengan adanya nasi, membuat onigiri bisa menjadi makanan utama anda yang praktis'
     },
     {
-        nama: 'Sate Ayam',
-        harga: '20.000',
-        bahan: ['bahan-1', 'bahan-2', 'bahan-3', 'bahan-4', 'bahan-5', 'bahan-6'],
+        nama: 'Nugget Cobek',
+        harga: '5.000',
+        bahan: ['- Nugget', '- Cabe rawit', '- Cikur', '- Bawang Merah', '- Bawang Putih', '- Tomat'],
         url: 'food7.jpg',
+        wa: 'https://wa.me/6281809448488?text=Mie%20Ayam%0ANama%20%3A%20%0AKelas%20%3A%20%0AJumlah%20pesanan%20%3A%20%0ADiantar%20ke%20%3A%20',
         keteranngan: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus ullam harum cumque nostrum ut magni, quia vel sed nulla.'
-    },
-    {
-        nama: 'Hot Dog',
-        harga: '15.000',
-        bahan: ['bahan-1', 'bahan-2', 'bahan-3', 'bahan-4', 'bahan-5', 'bahan-6'],
-        url: 'food8.jpg',
-        keteranngan: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus ullam harum cumque nostrum ut magni, quia vel sed nulla.'
-    },
+    }
 ]
 
 // !animasi hamburger-menu dan navigasi
@@ -78,7 +79,7 @@ function cetakProduk(item) {
         <h3>${el.nama}</h3>
         <p>Rp. ${el.harga}</p>
         <div class="button-product">
-        <a href="" class="order button">Order</a>
+        <a href="${el.wa}" class="order button" target="_blank">Order</a>
         <a href="#detail" class="detail-button button" onlick="showDetail()">Detail</a>
         </div>
     </div>
@@ -102,24 +103,21 @@ categoryMenu.addEventListener('click', () => {
 dropMenu.addEventListener('click', events => {
     if (events.target.classList.contains('category-1')) {
         dropMenu.classList.toggle('show');
-        category(DATA_STORE[0], DATA_STORE[1]);
-        const detailButton = document.querySelectorAll('.for-detail');
-        for (let i = 0; i < detailButton.length; i++) {
-            detailButton[0].setAttribute('data-set', 0);
-            detailButton[1].setAttribute('data-set', 1);
-            detailButton[i].addEventListener('click', () => {
-                const angka = detailButton[i].getAttribute('data-set');
-                return rowDetail.innerHTML = cetakDetailProduk(DATA_STORE[angka]);
-            })
-        }
+        category(DATA_STORE[3]);
+        const detailButton = document.querySelector('.for-detail');
+        detailButton.setAttribute('data-set', 3);
+        detailButton.addEventListener('click', () => {
+            const angka = detailButton.getAttribute('data-set');
+            return rowDetail.innerHTML = cetakDetailProduk(DATA_STORE[angka]);
+        })
     }
     if (events.target.classList.contains('category-2')) {
-        category(DATA_STORE[2], DATA_STORE[3]);
+        category(DATA_STORE[0], DATA_STORE[6]);
         dropMenu.classList.toggle('show');
         const detailButton = document.querySelectorAll('.for-detail');
         for (let i = 0; i < detailButton.length; i++) {
-            detailButton[0].setAttribute('data-set', 2);
-            detailButton[1].setAttribute('data-set', 3);
+            detailButton[0].setAttribute('data-set', 0);
+            detailButton[1].setAttribute('data-set', 6);
             detailButton[i].addEventListener('click', () => {
                 const angka = detailButton[i].getAttribute('data-set');
                 return rowDetail.innerHTML = cetakDetailProduk(DATA_STORE[angka]);
@@ -127,11 +125,11 @@ dropMenu.addEventListener('click', events => {
         }
     }
     if (events.target.classList.contains('category-3')) {
-        category(DATA_STORE[4], DATA_STORE[5]);
+        category(DATA_STORE[1], DATA_STORE[5]);
         dropMenu.classList.toggle('show');
         const detailButton = document.querySelectorAll('.for-detail');
         for (let i = 0; i < detailButton.length; i++) {
-            detailButton[0].setAttribute('data-set', 4);
+            detailButton[0].setAttribute('data-set', 1);
             detailButton[1].setAttribute('data-set', 5);
             detailButton[i].addEventListener('click', () => {
                 const angka = detailButton[i].getAttribute('data-set');
@@ -140,20 +138,20 @@ dropMenu.addEventListener('click', events => {
         }
     }
     if (events.target.classList.contains('category-4')) {
-        category(DATA_STORE[6]);
+        category(DATA_STORE[2]);
         dropMenu.classList.toggle('show');
         const detailButton = document.querySelector('.for-detail');
-        detailButton.setAttribute('data-set', 6);
+        detailButton.setAttribute('data-set', 2);
         detailButton.addEventListener('click', () => {
             const angka = detailButton.getAttribute('data-set');
             return rowDetail.innerHTML = cetakDetailProduk(DATA_STORE[angka]);
         })
     }
     if (events.target.classList.contains('category-5')) {
-        category(DATA_STORE[7]);
+        category(DATA_STORE[4]);
         dropMenu.classList.toggle('show');
         const detailButton = document.querySelector('.for-detail');
-        detailButton.setAttribute('data-set', 7);
+        detailButton.setAttribute('data-set', 4);
         detailButton.addEventListener('click', () => {
             const angka = detailButton.getAttribute('data-set');
             return rowDetail.innerHTML = cetakDetailProduk(DATA_STORE[angka]);
@@ -172,9 +170,9 @@ function category(...item) {
     <div class="image-product" style="background-image: url(../assets/${el.url});"></div>
     <div class="text-product">
         <h3>${el.nama}</h3>
-        <p>${el.harga}</p>
+        <p>Rp. ${el.harga}</p>
         <div class="button-product">
-        <a href="" class="order button">Order</a>
+        <a href="${el.wa}" class="order button" target="_blank">Order</a>
         <a href="#detail" class="detail-button button for-detail" onlick="showDetail()">Detail</a>
         </div>
     </div>
