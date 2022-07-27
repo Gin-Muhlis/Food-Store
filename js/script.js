@@ -18,7 +18,7 @@ const DATA_STORE = [
     },
     {
         nama: 'Basreng Spicy',
-        harga: '3.000',
+        harga: '4.000',
         bahan: ['- Baso ikan', '- Cabe kering', '- Bawang Putih', '- Minyak'],
         url: 'food3.webp',
         wa: 'https://wa.me/62895325722289?text=Basreng%20Spicy%0ANama%20%3A%20%0AKelas%20%3A%20%0AJumlah%20pesanan%20%3A%20%0ADiantar%20ke%20%3A%20',
