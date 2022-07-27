@@ -13,7 +13,7 @@ const DATA_STORE = [
         harga: '10.000',
         bahan: ['- Nasi', '- Nori', '- Mayo', '- Boncabe'],
         url: 'food2.jpg',
-        wa: 'https://wa.me/+6285950895918',
+        wa: 'https://wa.me/message/ONKCBZ2QJ3LIG1',
         keteranngan: 'Mentai adalah salah satu makanan Khas Jepang yang berbasis bahan nasi. Dengan mayo pedasnya yang melimpah, dan isi kornet / telur sosisnya, membuat rasa mentai satu ini gurih, enak dan sedap di mulut. Tak hanya bisa menjadi makanan selingan, dengan adanya nasi, membuat mentai bisa menjadi makanan utama anda.'
     },
     {
@@ -45,7 +45,7 @@ const DATA_STORE = [
         harga: '8.000',
         bahan: ['- Nasi', '- Nori', '- Telur', '- Sosis'],
         url: 'food6.jpg',
-        wa: 'https://wa.me/+6285950895918',
+        wa: 'https://wa.me/message/ONKCBZ2QJ3LIG1',
         keteranngan: 'Onigiri adalah segenggam nasi yang dibentuk menjadi bentuk yang praktis. Onigiri bisa menjadi "go to main dish" anda. Kepalan nasi berbentuk segitiga yang berisi telur sosis / kornet, yang bisa membuat lidah dan perut anda berbahagia saat memakannya. Dengan adanya nasi, membuat onigiri bisa menjadi makanan utama anda yang praktis.'
     },
     {
