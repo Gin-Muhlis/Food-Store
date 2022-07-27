@@ -6,7 +6,7 @@ const DATA_STORE = [
         bahan: ['- Mie', '- Daging Ayam', '- Sawi', '- Pangsit'],
         url: 'food1.jpg',
         wa: 'https://wa.me/6281809448488?text=Mie%20Ayam%0ANama%20%3A%20%0AKelas%20%3A%20%0AJumlah%20pesanan%20%3A%20%0ADiantar%20ke%20%3A%20',
-        keteranngan: 'Mi ayam adalah hidangan khas Indonesia yang terbuat dari mi gandum kuning yang dibumbui dengan daging ayam yang biasanya dipotong dadu.'
+        keteranngan: 'Mie Ayam walaupun sering kita jumpai di pinggir jalan tapi kita jarang mampir untuk beli, jadi kami menyediakan mie ayam buatan sendiri agar kalian mengerti jika mie ayam itu ada dan mempunyai rasa yang enak.'
     },
     {
         nama: 'Mentai',
@@ -54,7 +54,7 @@ const DATA_STORE = [
         bahan: ['- Nugget', '- Cabe rawit', '- Cikur', '- Bawang Merah', '- Bawang Putih', '- Tomat'],
         url: 'food7.jpg',
         wa: 'https://wa.me/6281809448488?text=Mie%20Ayam%0ANama%20%3A%20%0AKelas%20%3A%20%0AJumlah%20pesanan%20%3A%20%0ADiantar%20ke%20%3A%20',
-        keteranngan: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus ullam harum cumque nostrum ut magni, quia vel sed nulla.'
+        keteranngan: 'Cobek Nugget memang terlihat biasa tapi tapi karena itulah yang membuat cobek nugget ini enak, rasa pedas yang terdapat di bumbunya membuat kalian ketagihan, seperti kalian yang sering ditolak tapi tetap ketagihan untuk mendapatkan pacar.'
     }
 ]
 
@@ -148,7 +148,7 @@ dropMenu.addEventListener('click', events => {
         })
     }
     if (events.target.classList.contains('category-5')) {
-        category(DATA_STORE[4]);
+        category(DATA_STORE[4])
         dropMenu.classList.toggle('show');
         const detailButton = document.querySelector('.for-detail');
         detailButton.setAttribute('data-set', 4);
