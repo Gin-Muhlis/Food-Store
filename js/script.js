@@ -25,12 +25,12 @@ const DATA_STORE = [
         keteranngan: 'Es Dawet merupakan minuman khas jogjakarta yang terbuat dari tepung beras ataupun tepung beras ketan, disajikan dengan es parut serta gula merah cair dan santan.'
     },
     {
-        nama: 'Mie Tek-tek Goreng',
-        harga: '-',
+        nama: 'Bakmi',
+        harga: '6.000',
         bahan: ['- Mie Telor', '- Cabai', '- Bawang Merah', '- Bawang Putih', '- Telur', '- Dll.'],
         url: 'mie.jpg',
-        wa: 'https://wa.me/6281313846133?text=Mie%20Tek%20Tek%20Goreng%0ANama%20%3A%20%0AKelas%20%3A%20%0AJumlah%20pesanan%20%3A%20%0ADiantar%20ke%20%3A%20',
-        keteranngan: 'Mie tek-tek adalah salah satu olahan mie yang populer di Indonesia. Rasanya yang enak dan lezat, dengan rasa yang khas bisa membuat anda ketagihan.'
+        wa: 'https://wa.me/6281313846133?text=Mie%20Bakmi%0ANama%20%3A%20%0AKelas%20%3A%20%0AJumlah%20pesanan%20%3A%20%0ADiantar%20ke%20%3A%20',
+        keteranngan: 'Mie yang mirip dengan mie tek-tek hanya saja lebih murah dan lebih lezat yang bisa membuat anda ketagihan.'
     },
     {
         nama: 'Nasi Kumis Kucing',
@@ -42,23 +42,6 @@ const DATA_STORE = [
     }
     
 ]
-
-// !loader
-const content = document.getElementById('content');
-const loader = document.querySelector('.loader');
-
-document.addEventListener('DOMContentLoaded', () => {
-    loader.style.display = 'block';
-
-    setTimeout(() => {
-        loader.style.display = 'none';
-        content.classList.add('show');
-    }, 5000);
-
-    setTimeout(() => {
-        typing();
-    }, 5600);
-})
 
 // !animasi hamburger-menu dan navigasi
 const menus = document.querySelectorAll(".menu");
@@ -217,4 +200,6 @@ function typing() {
         templete.style.borderRightColor = 'transparent';
     }
 }
-
+setTimeout(() => {
+    typing();
+}, 100);
