@@ -1,62 +1,64 @@
 // !membuat data produk
 const DATA_STORE = [
     {
-        nama: 'Mie Ayam',
-        harga: '10.000',
-        bahan: ['- Mie', '- Daging Ayam', '- Sawi', '- Pangsit'],
-        url: 'food1.jpg',
-        wa: 'https://wa.me/6281809448488?text=Mie%20Ayam%0ANama%20%3A%20%0AKelas%20%3A%20%0AJumlah%20pesanan%20%3A%20%0ADiantar%20ke%20%3A%20',
-        keteranngan: 'Mie Ayam walaupun sering kita jumpai di pinggir jalan tapi kita jarang mampir untuk beli, jadi kami menyediakan mie ayam buatan sendiri agar kalian mengerti jika mie ayam itu ada dan mempunyai rasa yang enak.'
-    },
-    {
-        nama: 'Mentai',
-        harga: '10.000',
-        bahan: ['- Nasi', '- Nori', '- Mayo', '- Boncabe'],
-        url: 'food2.jpg',
-        wa: 'https://wa.me/message/ONKCBZ2QJ3LIG1',
-        keteranngan: 'Mentai adalah salah satu makanan Khas Jepang yang berbasis bahan nasi. Dengan mayo pedasnya yang melimpah, dan isi kornet / telur sosisnya, membuat rasa mentai satu ini gurih, enak dan sedap di mulut. Tak hanya bisa menjadi makanan selingan, dengan adanya nasi, membuat mentai bisa menjadi makanan utama anda.'
-    },
-    {
-        nama: 'Basreng Spicy',
-        harga: '4.000',
-        bahan: ['- Baso ikan', '- Cabe kering', '- Bawang Putih', '- Minyak'],
-        url: 'food3.webp',
-        wa: 'https://wa.me/62895325722289?text=Basreng%20Spicy%0ANama%20%3A%20%0AKelas%20%3A%20%0AJumlah%20pesanan%20%3A%20%0ADiantar%20ke%20%3A%20',
-        keteranngan: 'Basreng goreng dengan rasa yang unik dan khas, dibuat dengan baso ikan terbaik dan di padukan dengan bumbu pedas serta ditambah daun jeruk sehingga mempunyai wangi yang bisa membuat anda ketagihan.'
-    },
-    {
-        nama: 'Donat Enak',
-        harga: '3.000',
-        bahan: ['- Terigu', '- Mentega', '- Ragi',  '- Gula Tepung', '- Telur', '- Air'],
-        url: 'food4.jpg',
-        wa: 'https://wa.me/6283184522191?text=Donat%20Enak%0ANama%20%3A%20%0AKelas%20%3A%20%0AJumlah%20pesanan%20%3A%20%0ADiantar%20ke%20%3A%20',
-        keteranngan: 'Yang manis bukan hanya crush mu tapi ada donat enak dari rpl 1 yang ga kalah manis juga enak banget cocok dimakan kapan saja.'
-    },
-    {
-        nama: 'Sebring TAFIRA',
-        harga: '3.000',
-        bahan: [],
-        url: 'food5.jpg',
-        wa: 'https://wa.me/6289516807559?text=Sebring%20TAFIRA%0ANama%20%3A%20%0AKelas%20%3A%20%0AJumlah%20pesanan%20%3A%20%0ADiantar%20ke%20%3A%20',
-        keteranngan: 'Cemilan satu ini membuat semua tergila gila, semoga kalian tidak gila karena kehabisan produk kami.'
-    },
-    {
-        nama: 'Onigiri',
-        harga: '8.000',
-        bahan: ['- Nasi', '- Nori', '- Telur', '- Sosis'],
-        url: 'food6.jpg',
-        wa: 'https://wa.me/message/ONKCBZ2QJ3LIG1',
-        keteranngan: 'Onigiri adalah segenggam nasi yang dibentuk menjadi bentuk yang praktis. Onigiri bisa menjadi "go to main dish" anda. Kepalan nasi berbentuk segitiga yang berisi telur sosis / kornet, yang bisa membuat lidah dan perut anda berbahagia saat memakannya. Dengan adanya nasi, membuat onigiri bisa menjadi makanan utama anda yang praktis.'
-    },
-    {
-        nama: 'Nugget Cobek',
+        nama: 'Es Semlo',
         harga: '5.000',
-        bahan: ['- Nugget', '- Cabe rawit', '- Cikur', '- Bawang Merah', '- Bawang Putih', '- Tomat'],
-        url: 'food7.jpg',
-        wa: 'https://wa.me/6281809448488?text=Mie%20Ayam%0ANama%20%3A%20%0AKelas%20%3A%20%0AJumlah%20pesanan%20%3A%20%0ADiantar%20ke%20%3A%20',
-        keteranngan: 'Cobek Nugget memang terlihat biasa tapi tapi karena itulah yang membuat cobek nugget ini enak, rasa pedas yang terdapat di bumbunya membuat kalian ketagihan, seperti kalian yang sering ditolak tapi tetap ketagihan untuk mendapatkan pacar.'
+        bahan: ['- Pisang', '- Jeruk Nipis', '- Kayu Manis', '- Gular Pasir', '- Air', '- Jahe', '- Dll.'],
+        url: 'semlo.jpg',
+        wa: 'https://wa.me/6289517022885?text=Es%20Semlo%0ANama%20%3A%20%0AKelas%20%3A%20%0AJumlah%20pesanan%20%3A%20%0ADiantar%20ke%20%3A%20',
+        keteranngan: 'Es Semlo merupakan hidangan khas keraton Jogja, Sekilas nampak seperti setup pisang namun diberi tambahan gula pasir dan rempah seperti jahe dan kayu manis.'
+    },
+    {
+        nama: 'Kue Bakpia',
+        harga: '3.000',
+        bahan: ['- Gula', '- Kacang Hijau', '- Terigu', '- Dll.'],
+        url: 'bakpia.jpg',
+        wa: 'https://wa.me/6289516807559?text=Kue%20Bakpia%0ANama%20%3A%20%0AKelas%20%3A%20%0AJumlah%20pesanan%20%3A%20%0ADiantar%20ke%20%3A%20https://wa.me/6289516807559?text=Kue%20Bakpia%0ANama%20%3A%20%0AKelas%20%3A%20%0AJumlah%20pesanan%20%3A%20%0ADiantar%20ke%20%3A%20',
+        keteranngan: "Dalam bahasa Tiongkok, bakpia disebut dengan 'tou luk pia' yang berarti kue pia kacang hijau. Namun ada pula yang menyebut bahwa bakpia berasal dari kata 'bak' dan 'pia'."
+    },
+    {
+        nama: 'Es Dawet',
+        harga: '5.000',
+        bahan: ['- Tepung', '- Gula Merah', '- Air', '- Santan', '- Dll.'],
+        url: 'dawet.jpg',
+        wa: 'https://wa.me/6287899312186?text=Es%20Dawet%0ANama%20%3A%20%0AKelas%20%3A%20%0AJumlah%20pesanan%20%3A%20%0ADiantar%20ke%20%3A%20',
+        keteranngan: 'Es Dawet merupakan minuman khas jogjakarta yang terbuat dari tepung beras ataupun tepung beras ketan, disajikan dengan es parut serta gula merah cair dan santan.'
+    },
+    {
+        nama: 'Mie Tek-tek Goreng',
+        harga: '-',
+        bahan: ['- Mie Telor', '- Cabai', '- Bawang Merah', '- Bawang Putih', '- Telur', '- Dll.'],
+        url: 'mie.jpg',
+        wa: 'https://wa.me/6281313846133?text=Mie%20Tek%20Tek%20Goreng%0ANama%20%3A%20%0AKelas%20%3A%20%0AJumlah%20pesanan%20%3A%20%0ADiantar%20ke%20%3A%20',
+        keteranngan: 'Mie tek-tek adalah salah satu olahan mie yang populer di Indonesia. Rasanya yang enak dan lezat, dengan rasa yang khas bisa membuat anda ketagihan.'
+    },
+    {
+        nama: 'Nasi Kumis Kucing',
+        harga: '5.000',
+        bahan: ['- Nasi', '- Tempe', '- Teri',  '- Sambal khas Angkringan', '- Dll.'],
+        url: 'nasi.jpg',
+        wa: 'https://wa.me/6281809448488?text=Nasi%20Kumis%20Kucing%0ANama%20%3A%20%0AKelas%20%3A%20%0AJumlah%20pesanan%20%3A%20%0ADiantar%20ke%20%3A%20',
+        keteranngan: 'Nasi Kumis kucing adalah nasi khas angkringan walaupun sederhana tapi memiliki rasa khas tersendiri.'
     }
+    
 ]
+
+// !loader
+const content = document.getElementById('content');
+const loader = document.querySelector('.loader');
+
+document.addEventListener('DOMContentLoaded', () => {
+    loader.style.display = 'block';
+
+    setTimeout(() => {
+        loader.style.display = 'none';
+        content.classList.add('show');
+    }, 5000);
+
+    setTimeout(() => {
+        typing();
+    }, 5600);
+})
 
 // !animasi hamburger-menu dan navigasi
 const menus = document.querySelectorAll(".menu");
@@ -102,22 +104,26 @@ categoryMenu.addEventListener('click', () => {
 // !menampilkan produk sesuai kategori yang diklik user
 dropMenu.addEventListener('click', events => {
     if (events.target.classList.contains('category-1')) {
+        category(DATA_STORE[1], DATA_STORE[3], DATA_STORE[4]);
         dropMenu.classList.toggle('show');
-        category(DATA_STORE[3]);
-        const detailButton = document.querySelector('.for-detail');
-        detailButton.setAttribute('data-set', 3);
-        detailButton.addEventListener('click', () => {
-            const angka = detailButton.getAttribute('data-set');
-            return rowDetail.innerHTML = cetakDetailProduk(DATA_STORE[angka]);
-        })
+        const detailButton = document.querySelectorAll('.for-detail');
+        for (let i = 0; i < detailButton.length; i++) {
+            detailButton[0].setAttribute('data-set', 1);
+            detailButton[1].setAttribute('data-set', 3);
+            detailButton[2].setAttribute('data-set', 4);
+            detailButton[i].addEventListener('click', () => {
+                const angka = detailButton[i].getAttribute('data-set');
+                return rowDetail.innerHTML = cetakDetailProduk(DATA_STORE[angka]);
+            })
+        }
     }
     if (events.target.classList.contains('category-2')) {
-        category(DATA_STORE[0], DATA_STORE[6]);
+        category(DATA_STORE[0], DATA_STORE[2]);
         dropMenu.classList.toggle('show');
         const detailButton = document.querySelectorAll('.for-detail');
         for (let i = 0; i < detailButton.length; i++) {
             detailButton[0].setAttribute('data-set', 0);
-            detailButton[1].setAttribute('data-set', 6);
+            detailButton[1].setAttribute('data-set', 2);
             detailButton[i].addEventListener('click', () => {
                 const angka = detailButton[i].getAttribute('data-set');
                 return rowDetail.innerHTML = cetakDetailProduk(DATA_STORE[angka]);
@@ -125,39 +131,6 @@ dropMenu.addEventListener('click', events => {
         }
     }
     if (events.target.classList.contains('category-3')) {
-        category(DATA_STORE[1], DATA_STORE[5]);
-        dropMenu.classList.toggle('show');
-        const detailButton = document.querySelectorAll('.for-detail');
-        for (let i = 0; i < detailButton.length; i++) {
-            detailButton[0].setAttribute('data-set', 1);
-            detailButton[1].setAttribute('data-set', 5);
-            detailButton[i].addEventListener('click', () => {
-                const angka = detailButton[i].getAttribute('data-set');
-                return rowDetail.innerHTML = cetakDetailProduk(DATA_STORE[angka]);
-            })
-        }
-    }
-    if (events.target.classList.contains('category-4')) {
-        category(DATA_STORE[2]);
-        dropMenu.classList.toggle('show');
-        const detailButton = document.querySelector('.for-detail');
-        detailButton.setAttribute('data-set', 2);
-        detailButton.addEventListener('click', () => {
-            const angka = detailButton.getAttribute('data-set');
-            return rowDetail.innerHTML = cetakDetailProduk(DATA_STORE[angka]);
-        })
-    }
-    if (events.target.classList.contains('category-5')) {
-        category(DATA_STORE[4])
-        dropMenu.classList.toggle('show');
-        const detailButton = document.querySelector('.for-detail');
-        detailButton.setAttribute('data-set', 4);
-        detailButton.addEventListener('click', () => {
-            const angka = detailButton.getAttribute('data-set');
-            return rowDetail.innerHTML = cetakDetailProduk(DATA_STORE[angka]);
-        })
-    }
-    if (events.target.classList.contains('category-6')) {
         listProduk.innerHTML = cetakProduk(DATA_STORE);
         showDetail()
     };
@@ -228,3 +201,20 @@ listMenu.forEach(item => {
     hambergerMenu.classList.toggle("open");
   })  
 })
+
+// !text animation
+let templete = document.querySelector('.rpl');
+let text = 'RPL Store.';
+let i = 0;
+
+function typing() {
+    if (i < text.length) {
+        templete.innerHTML += text.charAt(i);
+        i++;
+
+        setTimeout(typing, 400);
+    } else if (i === text.length) {
+        templete.style.borderRightColor = 'transparent';
+    }
+}
+

@@ -1,6 +1,6 @@
 /* !variabe; */
 :root {
-    --primary-color: #ff0000;
+    --primary-color: #250e3a;
     --second-text-color-light: #efefef;
     --primary-text-color-light: #ffffff;
     --primary-text-color-dark: #080808;
@@ -9,6 +9,65 @@
 
 html {
     scroll-behavior: smooth;
+}
+
+/* !Loader */
+.loader {
+    width: 60px;
+    height: 60px;
+    border: 5px solid transparent;
+    border-top-color: var(--primary-color);
+    border-bottom-color: var(--primary-color);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation: loader 1s infinite;
+    -webkit-animation: loader 1s infinite;
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+@keyframes loader {
+    from {
+        transform: translate(-50%, -50%) rotate(0turn);
+        -webkit-transform: translate(-50%, -50%) rotate(0turn);
+        -moz-transform: translate(-50%, -50%) rotate(0turn);
+        -ms-transform: translate(-50%, -50%) rotate(0turn);
+        -o-transform: translate(-50%, -50%) rotate(0turn);
+}
+
+    to {
+        transform: translate(-50%, -50%) rotate(1turn);
+        -webkit-transform: translate(-50%, -50%) rotate(1turn);
+        -moz-transform: translate(-50%, -50%) rotate(1turn);
+        -ms-transform: translate(-50%, -50%) rotate(1turn);
+        -o-transform: translate(-50%, -50%) rotate(1turn);
+}
+
+}
+
+@media screen and (max-width: 400px) {
+    .loader {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+#content {
+    display: none;
+}
+
+#content.show {
+    display: block;
 }
 
 .container {
@@ -181,6 +240,10 @@ html {
 .open::before {
     top: 0;
     transform: translateX(100%) rotate(-90deg);
+    -webkit-transform: translateX(100%) rotate(-90deg);
+    -moz-transform: translateX(100%) rotate(-90deg);
+    -ms-transform: translateX(100%) rotate(-90deg);
+    -o-transform: translateX(100%) rotate(-90deg);
 }
 
 .open::after {
@@ -235,9 +298,10 @@ html {
 /* !banner */
 .banner {
     height: 100vh;
-    background-image: url(../assets/banner-mobile.jpg);
+    background-image: url(../assets/background.jpg);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .banner-text {
@@ -250,17 +314,23 @@ html {
 }
 
 .banner-text h1 {
-    font-size: 25px;
+    font-size: 27px;
     font-weight: 700;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
     color: var(--primary-text-color-light);
 }
 
+.banner-text h1 span {
+    color: #00ffb3;
+    border: 2px solid transparent;
+    border-right-color: #fff;
+}
+
 .banner-text p {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 500;
     margin-bottom: 30px;
-    color: var(--primary-text-color-light);
+    color: var(--second-text-color-light);
 }
 
 .banner-text a {
@@ -279,9 +349,6 @@ html {
 
 /* !banner responsive break-points */
 @media screen and (min-width: 500px) {
-    .banner {
-        background-image: url(../assets/banner-mobile.jpg);
-    }
     .banner-text h1 {
         font-size: 30px;
         margin-bottom: 8px;
@@ -346,6 +413,7 @@ html {
 }
 
 @media screen and (min-width: 768px) {
+
     .about h2,
     .detail h2 {
         font-size: 22px;
@@ -426,7 +494,7 @@ html {
 /* !product */
 .product {
     padding: 50px 0;
-    background: rgba(255, 0, 0, .1);
+    background: rgba(0, 255, 179, .1);
 }
 
 .product .top-product {
@@ -455,7 +523,7 @@ html {
 }
 
 .top-product .category {
-    position: absolute; 
+    position: absolute;
     right: 16px;
     top: 50%;
     width: 10px;
@@ -467,6 +535,7 @@ html {
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
 }
+
 @media screen and (min-width: 768px) {
     .top-product .category::after {
         content: 'kategori';
@@ -496,7 +565,7 @@ html {
         -ms-border-radius: 3px;
         -o-border-radius: 3px;
     }
-    
+
     .top-product .category:hover::after {
         opacity: 8;
         transform: translateX(-50%) scale(1);
